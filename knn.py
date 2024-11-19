@@ -5,8 +5,8 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import accuracy_score
 import numpy as np
 
-st.header("การจำแนกข้อมูลดอกไม้")
-st.image('./img/IMG_2571.jpg')
+st.header("Simpp:) MTV🧸🎧🎸")
+st.image('./img/IMG_2571.jpg',width=500)
 
 dt = pd.read_csv('./data/iris-3.csv')
 st.subheader('ข้อมูลดิบ iris')
