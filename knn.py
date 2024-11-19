@@ -17,15 +17,15 @@ col1, col2, col3 = st.columns(3)
 
 with col1:
    st.header("Versicolor")
-   st.image("./img/iris1.jpg")
+   st.image("./img/Setosa2.jpg")
 
 with col2:
    st.header("Verginiga")
-   st.image("./img/iris2.jpg")
+   st.image("./img/versicolor_2.jpg")
 
 with col3:
    st.header("Setosa")
-   st.image("./img/iris3.jpg")
+   st.image("./img/virginica2.jpg")
 
 html_7 = """
 <div style="background-color:#EC7063;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
@@ -80,10 +80,10 @@ if st.button("ทำนายผล"):
    out=Knn_model.predict(x_input)
 
    if out[0] == 'Setosa':
-    st.image("./img/iris1.jpg")
+    st.image("./img/Setosa2.jpg")
    elif out[0] == 'Versicolor':       
-    st.image("./img/iris2.jpg")
+    st.image("./img/versicolor_2.jpg")
    else:
-    st.image("./img/iris3.jpg")
+    st.image("./img/virginica2.jpg")
 else:
     st.write("ไม่ทำนาย")
